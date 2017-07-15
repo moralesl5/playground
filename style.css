@@ -7,7 +7,9 @@ body{
     display:block;
     position: fixed;
     z-index: -1;
-    left: 15%;
+    /*left: 5%;*/
+    overflow: none;
+    /*border: 1px solid white;*/
 }
 
 .block {

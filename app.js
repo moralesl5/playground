@@ -13,7 +13,7 @@ const config = {
             }
         },
         "color": {
-            "value": "#000000"
+            "value": "#ffffff"
         },
         "shape": {
             "type": "circle",
@@ -41,7 +41,7 @@ const config = {
             }
         },
         "size": {
-            "value": 5,
+            "value": 3,
             "random": true,
             "anim": {
                 "enable": false,
@@ -51,7 +51,7 @@ const config = {
             }
         },
         "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 150,
             "color": "#ffffff",
             "opacity": 0.4,
@@ -59,7 +59,7 @@ const config = {
         },
         "move": {
             "enable": true,
-            "speed": 6,
+            "speed": 1,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -76,7 +76,7 @@ const config = {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "bubble"
             },
             "onclick": {
                 "enable": true,
@@ -92,10 +92,10 @@ const config = {
                 }
             },
             "bubble": {
-                "distance": 400,
-                "size": 40,
+                "distance": 150,
+                "size": 0,
                 "duration": 2,
-                "opacity": 8,
+                "opacity": 0,
                 "speed": 3
             },
             "repulse": {
