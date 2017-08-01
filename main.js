@@ -1,4 +1,3 @@
-
 // BUBBLE JS
 var myName = "Logan Morales";
 
@@ -11,31 +10,37 @@ var letterColors = [red, orange, green, blue, purple];
 
 drawName(myName, letterColors);
 
-if(10 < 3)
-{
+if (10 < 3) {
     bubbleShape = 'square';
-}
-else
-{
+} else {
     bubbleShape = 'circle';
 }
 
 bounceBubbles();
 
 
-$(()=>{
-	$('canvas').width($(window).width())
+$(() => {
+    $('canvas').width($(window).width())
 
 
-	$('.project').hover(function() {
-		console.log('clicked')
-		setTimeout(() =>{
-	    	$(this).toggleClass('show-description');
-			
-		}, 100)
-	});
 
+    $(window).scroll(function(e) {
+        var $el = $('.proj-header');
+        var isPositionFixed = ($el.css('position') == 'fixed');
+        if ($(this).scrollTop() > 700 && !isPositionFixed) {
+            $('.proj-header').css({ 'position': 'fixed', 'top': '0px' });
+        }
+        if ($(this).scrollTop() < 700 && isPositionFixed) {
+            $('.proj-header').css({ 'position': 'static', 'top': '0px' });
+        }
+    });
+
+    $('.project').hover(function() {
+        console.log('clicked')
+        setTimeout(() => {
+            $(this).toggleClass('show-description');
+
+        }, 100)
+    });
 
 })
-
-
