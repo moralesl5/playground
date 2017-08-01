@@ -1,29 +1,240 @@
-body{
-	text-align: center;
-	background: rgb(33,36,50);
+body, html{
+	/*text-align: center;*/
+    margin: 0;
+	/*background: rgb(33,36,50);*/
+
 }
+
+
+
+/*body{
+    height: 2000px;
+}*/
+
+.top{
+    position: fixed;
+    /*margin-bottom: 5%;*/
+    /*z-index: -5;*/
+}
+
+
 
 .stuff{
     display:block;
-    position: fixed;
+    position: absolute;
     z-index: -1;
-    /*left: 5%;*/
-    overflow: none;
     /*border: 1px solid white;*/
+    background: rgb(33,36,50);
 }
 
-.block {
-    width: 25vw;
-    height: 25vh;
-    border: 1px solid black;
-    /*margin: 10px;*/
-    background-color: rgba(255,255,255, 0.2);
+.arrow-container{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    animation-duration: 10s;
+    margin: 0;
+    text-align: center;
 
 }
+
+.arrowDown{
+    position: absolute;
+    z-index: 10000;
+    height: 30px;
+    /*width: 140px;*/
+    margin: 0 auto;
+    bottom: 0px;
+    animation-duration: 1.8s;
+    animation-delay: 1s;
+}
+
+
 
 script > canvas {
     display:block;
     background: rgb(33,36,50);
     position: fixed;
     z-index: -1;
+    width: 100%;
+    height: 100vh;
+
 }
+
+main{
+    background-image: linear-gradient(#8b9da9, #fff6e4);
+    box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+    position: relative;
+    /*clear: both;*/
+    top: 100vh;
+    z-index: 1;
+}
+
+
+/*.about-me{
+    border: 1px solid black;
+    margin-top: 5%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: cornflowerblue;
+}*/
+
+/*.profile{
+    display: flex;
+    height: auto;
+    width: 450px;
+    margin: 0 50px;
+    margin-top: 5%; 
+    float: left;
+}*/
+
+/*.text {
+    width: 300px;
+    background-color: rgba(33,36,50, 0.5);
+    color: white;
+    height: 200px;
+    font-size: 40px;
+    padding: 15px;
+    margin-top: 15%;
+}
+
+.pic{
+    border-radius: 100%;
+}*/
+
+.proj-header-div{
+    height: 100px;
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.proj-header{
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 3em;
+    color: white;
+    height: 70px;
+    width: 100vw;
+    background-color: rgba(1,0,0,.5);
+    box-shadow: 4px 4px 4px #888888;
+    text-shadow: 4px 4px 4px #000000;
+
+
+    /*position: fixed;*/
+    /*z-index: 5;*/
+    /*margin-top: 5%;*/
+}
+
+.projects{
+    /*background-color: limegreen;*/
+    
+    width: 100vw;
+    height: auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    overflow: visible;
+}
+
+
+.project{
+    /*border: 1px solid black;*/
+    height: 300px;
+    width: 800px;
+    display: inline-block;
+    margin: 40px 10px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    /*border-radius: 12px;*/
+    position: relative;
+    box-shadow: 4px 4px 4px #888888;
+}
+
+.one{
+    background-image: url(./resources/kopykat.gif);
+    background-size: cover;
+    position: 
+}
+
+.two{
+    background-image: url(./resources/pennyless.gif);
+    background-size: cover;
+}
+
+.three{
+    background-image: url(./resources/ment.gif);
+    background-size: cover;
+}
+
+.four{
+    background-image: url(https://www.wineforyou.dk/wp-content/uploads/2016/01/more-coming-soon-png-i13-1240x698.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+small{
+    opacity: 0
+}
+
+.show-description p {
+  height: 280px;
+  /*border-radius: 12px;*/
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+
+
+p{
+  font-size: 20px;
+  /*border: 1px solid white;*/
+  color: rgba(255,255,255,1);
+  background: white;
+  background: rgba(1,0,0,.5);
+ /* background: linear-gradient(bottom, rgba(1,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));*/
+  padding: 10px;
+  /*line-height: 28px;*/
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  text-align: center;
+}
+
+p a{
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    margin-top: 5%;
+    padding-top: 20px;
+}
+
+p a:hover{
+    background-color: white;
+    color: dodgerblue;
+    box-shadow: 4px 4px 4px #000000;
+}
+
+.pText{
+    font-size: 30px;
+}
+
+.ment{
+    font-size: 20px;
+}
+

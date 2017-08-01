@@ -1,19 +1,93 @@
-
 <html>
-  <head>
+
+<head>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="ScrollMagic.js"></script>
     <link rel="stylesheet" href="hover.css">
-  </head>
-  <body>
-    <canvas id="myCanvas" class = "stuff"></canvas>
-    <!-- <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script> -->
-    <script type="text/javascript" src="bubbles.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+</head>
 
-    <div id='particles-js'></div>
-    <script src="particles.js"></script>
-    <script src='app.js'></script>
-  </body>
+<body>
+    <div class="top">
+        <canvas id="myCanvas" class="stuff"></canvas>
+        <!-- <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script> -->
+        <div class="arrow-container">
+            <a href="#proj">
+            <img class="arrowDown animated infinite bounce" src="http://elfsea.ansteorra.org/images/arrow-down-gray-hi.png">
+            </a>
+        </div>
+        <script type="text/javascript" src="bubbles.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <div id='particles-js'></div>
+        <script src="particles.js"></script>
+        <script src="scroll.js"></script>
+        <script src='app.js'></script>
+    </div>
+    <main>
+        <!-- <div class="about-me" id="profile">
+            <img src="http://i.imgur.com/xkNQqql.jpg" class="profile pic">
+            <h2 class="profile text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>
+        </div> -->
+        <div class="proj-header-div">
+          <h1 class="proj-header">My Projects</h1>
+        </div>
+        <div id="proj" class="projects">
+            <!-- <h1 class = "project-text">Projects</h1> -->
+            <div class="project one">
+                <p class="move"><span>KopyKat</span>
+                    <br/>
+                    <small>
+          <br/>
+          <span class="pText">
+          As my first project at General Assembly, KopyKat helped develop my skills as a programmer
+          and played a key role in training myself to think programatically.</span> <br/>
+
+          <a href="https://moralesl5.github.io/KopyKat/" target="_blank">Demo</a>
+          <a href="https://github.com/moralesl5/KopyKat" target="_blank">Repo</a>
+        </small> </p>
+            </div>
+            <div class="project two">
+                <p class="move"><span>Pennyless</span>
+                    <br/>
+                    <small>
+          <br/>
+          <span class="pText">
+          Pennyless is designed for New Yorker's on a budget. I created a crowd-sourcing app that allows
+          users to share locations of interest with one another. </span> <br/>
+        
+          <a href="https://alluring-arches-18592.herokuapp.com/" target="_blank">Demo</a>
+          <a href="https://github.com/moralesl5/Pennyless" target="_blank">Repo</a>
+        </small> </p>
+            </div>
+            <div class="project three">
+                <p class="move"><span>Ment</span>
+                    <br/>
+                    <small>
+        <br/>
+        <span class="ment">
+          Ment redesigns what it means to be a Mentor. When a user registers or logs in, they are shown a list of topics that other people are struggling with. Users can post comments on a topic, scheduling a time to meet up and mentor the user with their particular question. If the user has a topic they need help in, they can post it up and anticipate a response from a trusted and friendly mentor. </span> <br/>
+          <a href="https://ment-the-app.herokuapp.com/login" target="_blank">Demo</a>
+          <a href="https://git.generalassemb.ly/Team-Anron-Loghir/Ment" target="_blank">Repo</a>
+        </small> </p>
+            </div>
+            <div class="project four">
+                <p class="move"><span>TBD</span>
+                    <br/>
+                    <small>
+          <br/>
+          <span class="pText">
+          As my first project at General Assembly, KopyKat helped develop my skills as a programmer
+          and played a key role in training myself to think programatically. </span> <br/>
+          <a href="https://moralesl5.github.io/KopyKat/" target="_blank">Demo</a> 
+          <a href="https://github.com/moralesl5/KopyKat" target="_blank">Repo</a>
+        </small> </p>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>

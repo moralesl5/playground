@@ -6,7 +6,7 @@ console.log('linked')
 const config = {
     "particles": {
         "number": {
-            "value": 80,
+            "value": 300,
             "density": {
                 "enable": true,
                 "value_area": 800
@@ -76,10 +76,10 @@ const config = {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "bubble"
+                "mode": "bubble" // repulse
             },
             "onclick": {
-                "enable": true,
+                "enable": false,
                 "mode": "push"
             },
             "resize": true

@@ -1,3 +1,5 @@
+
+// BUBBLE JS
 var myName = "Logan Morales";
 
 var red = [0, 100, 63];
@@ -19,3 +21,21 @@ else
 }
 
 bounceBubbles();
+
+
+$(()=>{
+	$('canvas').width($(window).width())
+
+
+	$('.project').hover(function() {
+		console.log('clicked')
+		setTimeout(() =>{
+	    	$(this).toggleClass('show-description');
+			
+		}, 100)
+	});
+
+
+})
+
+
