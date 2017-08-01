@@ -158,6 +158,7 @@ main{
     position: relative;
     box-shadow: 4px 4px 4px #888888;
     z-index: 3;
+    overflow: hidden;
 }
 
 .one{
