@@ -244,5 +244,15 @@ p a:hover{
 
 .ment{
     font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.button-hide{
+    opacity: 0;
+}
+
+.button-show{
+    opacity: 1;
 }
 

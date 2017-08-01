@@ -39,7 +39,13 @@ $(() => {
         console.log('clicked')
         setTimeout(() => {
             $(this).toggleClass('show-description');
+            $('.ment').toggleClass('animated fadeInUp')
+            $('.pText').toggleClass('animated fadeInUp') // WORK HERE!!!
+            setTimeout(() =>{
 
+            	$('.button-hide').toggleClass('button-show animated fadeIn')
+            	
+            }, 500)
         }, 100)
     });
 
