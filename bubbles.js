@@ -1,3 +1,5 @@
+console.log('Bubble links');
+
 function Vector(x, y, z) {
     this.x = x;
     this.y = y;
@@ -156,8 +158,8 @@ function initEventListeners() {
  
 function updateCanvasDimensions() {
     canvas.attr({
-        height: 712,
-        width: 1420
+        height: $(window).height(),
+        width: $(window).width()
     });
     canvasWidth = canvas.width();
     canvasHeight = canvas.height();

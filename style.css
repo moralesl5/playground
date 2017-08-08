@@ -179,7 +179,7 @@ main{
 }
 
 .four{
-    background-image: url(https://www.wineforyou.dk/wp-content/uploads/2016/01/more-coming-soon-png-i13-1240x698.png);
+    background-image: url(./resources/slackbot.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -231,13 +231,14 @@ p a{
     text-decoration: none;
     margin-top: 5%;
     padding-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 p a:hover{
     background-color: white;
     color: dodgerblue;
-    box-shadow: 4px 4px 4px #000000;
-}
+    transition: background-color 0.3s ease;
+]}
 
 .pText{
     font-size: 30px;
@@ -256,4 +257,11 @@ p a:hover{
 .button-show{
     opacity: 1;
 }
+
+/*iframe{
+    width: 760px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}*/
 
