@@ -6,14 +6,14 @@ console.log('linked')
 const config = {
     "particles": {
         "number": {
-            "value": 300,
+            "value": 100,
             "density": {
                 "enable": true,
                 "value_area": 800
             }
         },
         "color": {
-            "value": "#ffffff"
+            "value": "#fff"
         },
         "shape": {
             "type": "circle",
@@ -53,13 +53,13 @@ const config = {
         "line_linked": {
             "enable": false,
             "distance": 150,
-            "color": "#ffffff",
+            "color": "#000000",
             "opacity": 0.4,
             "width": 1
         },
         "move": {
             "enable": true,
-            "speed": 1,
+            "speed": 3,
             "direction": "none",
             "random": false,
             "straight": false,
